@@ -1,0 +1,6 @@
+<h1>BBLW BLOG: SEND US YOUR SUBMISSIONS!</h1>
+<p><%= link_to 'New Submission', new_bblw_path %></p>
+<% @bblws.each do |bblws| %>
+<h2><%= bblws.title %></h2>
+<%= link_to  "Submit you entry here", bblws_path(bblws) %>
+<% end %>
